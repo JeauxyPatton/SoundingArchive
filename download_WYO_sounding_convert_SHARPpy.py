@@ -33,17 +33,6 @@ def downloadparse(requestdate, requestsite, station_ID):
 	else:
 		return data_raw.text
 
-# Creates the output string for each level
-def levelformat(level):
-	stout = ""
-	stout += str(level['pres']) + ",    "
-	stout += str(level['hght']) + ",    "
-	stout += str(level['tmpc']) + ",    "
-	stout += str(level['dwpc']) + ",    "
-	stout += str(level['drct']) + ",    "
-	stout += str(level['sknt']) + "\n"
-	return stout
-
 # Argument handling and variable initialization
 args = sys.argv
 if len(args) == 4:
